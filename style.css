@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body {
+    height: auto;
+    width: auto;
+    margin: 0%;
+    display: grid;
+    grid-template-rows: 28,6rem 27,5rem 26,25rem 26,25rem 30,625rem 18,75rem;
+    grid-template-areas: 
+    "head"
+    "section-1"
+    "section-2"
+    "section-3"
+    "section-4"
+    "section-5"
+    "footer"
+    ;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    grid-area: head;
+    background-image: url(images/header.png);
+    background-size: 100% 100%;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+header h1 {
+    font-family: 'Luckiest Guy';
+    font-size: 56px;
+    line-height: 56px;
+    margin-top: 70px;
+    font-weight: 400;
+    color: white;
+}
+
+header p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 0px;
+    margin: 6px;
+}
+
+header button a {
+    text-decoration-line: none;
+}
+
+.button1 a {
+    color: black;
+}
+
+.button2 {
+background-color: black;
+}
+
+.button2 a {
+    background-color: black;
+    color: white;
+}
+
+.section0 {
+    padding: 20px 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section1 {
+    margin-top: 40px;
+}
+
+.section2 {
+    margin-left: 20px;
+    display: block;
+    flex-direction: row;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section2  h1 {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.section3 {
+    grid-area: section-2;
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    padding: 0px 260px;
+    gap: 30px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section3 h1 {
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.section4 {
+    grid-area: section-3;
+    padding: 40px 260px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section4 h1 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.section5 {
+    background-color: #F6F6F6;
+    grid-area: section-5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 h1 {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0%;
+    font-family: 'Luckiest Guy';
+}
+
+.section5 p {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #23272A;
+    padding: 7px;
+    justify-content: center;
+    margin: 0%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: block;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "head"
+        "section-1"
+        "section-2"
+        "section-3"
+        "section-4"
+        "section-5"
+        "footer"
+        ;
+    }
+
+    header h1 {
+        font-size: 36px; 
+        margin-top: 30px; 
+    }
+
+    header p {
+        font-size: 14px; 
+    }
+
+    .section0 {
+        padding: 20px 20px; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2 h1,
+    .section3 h1,
+    .section4 h1,
+    .section5 h1{
+        font-size: 20px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .section2 p,
+    .section3 p,
+    .section4 p,
+    .section5 p {
+        font-size: 14px; 
+    }
+
+    footer img{
+        object-fit: fill;
+    }
+    
+    .section3,
+    .section4 {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
